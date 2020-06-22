@@ -17,22 +17,14 @@
 .. |ReadTheDocs| image:: https://readthedocs.org/projects/SafePredict/badge/?version=latest
 .. _ReadTheDocs: https://SafePredict.readthedocs.io/en/latest/?badge=latest
 
-project-template - A template for scikit-learn contributions
+SafePredict - An online learning meta-algorithm using refusals to guarantee asymptotic error bounds
 ============================================================
 
-.. _scikit-learn: https://scikit-learn.org
+Installation:
 
-**project-template** is a template project for scikit-learn_ compatible
-extensions.
+Run setup.sh file to install dependency packages
 
-It aids development of estimators that can be used in scikit-learn pipelines
-and (hyper)parameter search, while facilitating testing (including some API
-compliance), documentation, open source development, packaging, and continuous
-integration.
+Use pip to install SafePredict using:
 
-.. _documentation: https://SafePredict.readthedocs.io/en/latest/quick_start.html
+pip install -i https://test.pypi.org/simple/ SafePredict
 
-Refer to the documentation_ to modify the template for your own scikit-learn
-contribution.
-
-*Thank you for cleanly contributing to the scikit-learn ecosystem!*
