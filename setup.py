@@ -12,15 +12,15 @@ with open(ver_file) as f:
     exec(f.read())
 
 DISTNAME = 'SafePredict'
-DESCRIPTION = 'A template for scikit-learn compatible packages.'
+DESCRIPTION = 'An online learning meta-algorithm using refusals to guarantee asymptotic error bounds'
 with codecs.open('README.rst', encoding='utf-8-sig') as f:
     LONG_DESCRIPTION = f.read()
-MAINTAINER = 'V. Birodkars, G. Lemaitre'
-MAINTAINER_EMAIL = 'vighneshbirodkar@nyu.edu, g.lemaitre58@gmail.com'
+MAINTAINER = 'S. Jain'
+MAINTAINER_EMAIL = 'shantanuj.035@gmail.com'
 URL = 'https://github.com/scikit-learn-contrib/project-template'
 LICENSE = 'new BSD'
 DOWNLOAD_URL = 'https://github.com/scikit-learn-contrib/project-template'
-VERSION = __version__
+VERSION = "0.0.1"
 INSTALL_REQUIRES = ['numpy', 'scipy', 'scikit-learn']
 CLASSIFIERS = ['Intended Audience :: Science/Research',
                'Intended Audience :: Developers',
