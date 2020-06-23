@@ -279,7 +279,7 @@ from sklearn.calibration import CalibratedClassifierCV
 #         return predictions
 
 class safePredict(MetaEstimatorMixin, BaseEstimator):
-    def __init__(self, base_estimator=None, base_estimator_params = tuple(), target_error = 0.1, dummy_prob = 0.5, prediction_prob = 0.5, alpha = 1, beta = 0, horizon = 1, refusal_class = -1, calibration="isotonic", random_state=None):
+    def __init__(self, base_estimator=None, base_estimator_params = tuple(), target_error = 0.1, dummy_prob = 0.5, prediction_prob = 0.5, alpha = 0, beta = 1, horizon = 1, refusal_class = -1, calibration=None, random_state=None):
         self.base_estimator = base_estimator
         self.base_estimator_params = base_estimator_params
         self.target_error = target_error
@@ -327,7 +327,7 @@ class safePredict(MetaEstimatorMixin, BaseEstimator):
             self.estimator_ = self._make_estimator(random_state)
             self._set_random_states(self.estimator_, random_state)
         self._partial_fit(X, y, random_state=random_state)
-        self.refusal_class_ = y[0]
+        # self.refusal_class_ = y[0]
         # self.estimator_.fit(X,y)
         return self
     def _make_estimator(self, random_state = None):
