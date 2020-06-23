@@ -20,11 +20,20 @@
 SafePredict - An online learning meta-algorithm using refusals to guarantee asymptotic error bounds
 ============================================================
 
-Installation:
+Installation
+------------
 
-Run setup.sh file to install dependency packages
+Dependencies
+~~~~~~~~~~~~
 
-Use pip to install SafePredict using:
+Use ``pip`` to install required dependencies ::
 
-pip install -i https://test.pypi.org/simple/ SafePredict
+    pip install threadpoolctl joblib numpy scikit-learn
+
+SafePredict
+~~~~~~~~~~~~
+
+Use ``pip`` to install SafePredict ::
+
+    pip install -i https://test.pypi.org/simple/ SafePredict
 
