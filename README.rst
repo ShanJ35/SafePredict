@@ -63,18 +63,22 @@ The following are parameters for the ``safePredict`` object ::
 
     dummy_prob: Float describing initial probability of SafePredict refusing a base prediction. Default: 0.5
 
-    prediction_prob: Float describing initial probability of SafePredict accepting a base prediction. Note: dummy_prob and prediction_prob must sum to 1.0 . Default: 0.5
+    prediction_prob: Float describing initial probability of SafePredict accepting a base prediction. 
+    Note: dummy_prob and prediction_prob must sum to 1.0 . Default: 0.5
 
-    alpha: Float describing adaptivity parameter which is strict lower bound on the probability that SafePredict accepts a base prediction. Note: Validity is guaranteed if alpha is on the order of 1/T where T is the horizon. Default: 0.0
+    alpha: Float describing adaptivity parameter which is strict lower bound on the probability that SafePredict accepts a base prediction. 
+    Note: Validity is guaranteed if alpha is on the order of 1/T where T is the horizon. Default: 0.0
 
-    beta: Float describing adaptivity parameter which is strict upper bound on the probability that SafePredict accepts a base prediction. Note: Efficiency is optimal if beta is 2. Default: 1.0
+    beta: Float describing adaptivity parameter which is strict upper bound on the probability that SafePredict accepts a base prediction. 
+    Note: Efficiency is optimal if beta is 2. Default: 1.0
 
     horizon: Integer describing number of data points to be trained on in the online-learning setting. Default: 1
 
     refusal_class: Integer describing what label SafePredict should output if it refuses a base prediction. Default: -1
 
-    calibration: String describing which calibration method, if any, to use for confidence based refusals combined with SafePredict. Supports "sigmoid", "isotonic", None. Default: None
-    
+    calibration: String describing which calibration method, if any, to use for confidence based refusals combined with SafePredict. 
+    Supports "sigmoid", "isotonic", None. Default: None
+
     random_state: Integer for reproducible outputs across multiple function calls. Default: None
 
 
