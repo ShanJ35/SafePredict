@@ -20,7 +20,7 @@ MAINTAINER_EMAIL = 'shantanuj.035@gmail.com'
 URL = 'https://github.com/scikit-learn-contrib/project-template'
 LICENSE = 'new BSD'
 DOWNLOAD_URL = 'https://github.com/scikit-learn-contrib/project-template'
-VERSION = "0.0.1"
+VERSION = "0.0.2"
 INSTALL_REQUIRES = ['numpy', 'scipy', 'scikit-learn']
 CLASSIFIERS = ['Intended Audience :: Science/Research',
                'Intended Audience :: Developers',
